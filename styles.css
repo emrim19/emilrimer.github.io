@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'LondonFont';
+    src: url('Fonts/london_between/LondonBetween.ttf');
+  }
+
 /* Reset some default styles */
 body, h1, p, ul, li, a {
     margin: 0;
@@ -6,9 +11,9 @@ body, h1, p, ul, li, a {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'LondonFont', sans-serif;
     line-height: 1.6;
-    background-color: #494949;
+    background-color: #dbdbdb;
 }
 
 /* Header styles */
@@ -32,21 +37,9 @@ header .logo {
 header .nav-links {
     list-style: none;
     display: flex;
-}
-
-header .nav-links li {
     margin-left: 20px;
 }
 
-header .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-header .nav-links a:hover {
-    text-decoration: underline;
-}
 
 /* Hero section styles */
 .hero {
@@ -58,7 +51,7 @@ header .nav-links a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0 20px;
 }
 
@@ -89,6 +82,32 @@ header .nav-links a:hover {
 
 .cta-button:hover {
     background-color: #e55d51;
+}
+
+.headerButton{
+    font-family: 'LondonFont', sans-serif;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    color: #000000;
+    border: #000000;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid #333;
+    transition: background-color 0.5s ease, transform 0.2s;
+    margin: 0 4px;
+}
+
+.headerButton:hover {
+    background-color: #242424;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.headerButton:active {
+    transform: scale(1.2);
 }
 
 /* Footer styles */
