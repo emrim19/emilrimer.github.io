@@ -7,8 +7,8 @@
     --primary-color: #2A9D8F ;
     --secondary-color: #E9C46A ;
     --accent-color: #E76F51  ;
-    --background-color: #f4f4f4;
-    --text-color: #264653 ;
+    --background-color: #050e11;
+    --text-color: #ffffff ;
 }
 
 /* Reset some default styles */
@@ -103,3 +103,89 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Basic styling for the project item */
+.project-item {
+    max-width: 1200px; /* Adjust this value to your desired width */
+    margin: 20px auto; /* Center the item horizontally */
+    border: 5px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+}
+
+/* Flexbox container for the image and text content */
+.project-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Styling for the project image */
+.project-image {
+    max-width: 143px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* Flex child for the text content */
+.project-text {
+    flex-grow: 1;
+}
+
+/* Styling for the project title and description */
+.project-title {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.project-description {
+    color: var(--text-color);
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Styling for the hidden project details with a transition */
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, visibility 0s linear 0.5s, opacity 0.5s ease-out;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #E9C46A;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* When details are expanded */
+.project-details.expanded {
+    max-height: 500px; /* Adjust this value depending on the content height */
+    visibility: visible;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, visibility 0s linear 0s, opacity 0.5s ease-in;
+}
+
+/* Add a max-height and enable vertical scrolling for the project abstract */
+.project-abstract {
+    max-height: 400px; /* Adjust this value as needed */
+    overflow-y: auto;
+    padding-right: 10px; /* Optional: Add some padding to avoid content touching the scrollbar */
+}
+
+/* Optional: Style the scrollbar (for WebKit browsers like Chrome and Safari) */
+.project-abstract::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-abstract::-webkit-scrollbar-thumb {
+    background-color: #2A9D8F;
+    border-radius: 4px;
+}
+
+.project-abstract::-webkit-scrollbar-track {
+    background-color: #f4f1de;
+}
+
