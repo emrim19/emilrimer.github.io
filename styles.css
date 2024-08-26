@@ -104,7 +104,7 @@ footer {
 
 /* Basic styling for the project item */
 .project-item {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 20px auto;
     border: 5px solid var(--primary-color);
     padding: 20px;
@@ -198,12 +198,12 @@ footer {
     }
 
     .buttonTag {
-        padding: 8px 16px;
-        font-size: 16px;
+        padding: 6px 12px;
+        font-size: 12px;
     }
 
     header .logo {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .project-item {
@@ -239,8 +239,8 @@ footer {
     }
 
     .buttonTag {
-        padding: 9px 18px;
-        font-size: 17px;
+        padding: 10px 20px;
+        font-size: 18px;
     }
 
     header .logo {
