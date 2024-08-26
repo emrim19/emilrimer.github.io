@@ -6,7 +6,7 @@ function toggleDetails(button) {
     // Toggle the expanded class to trigger the animation
     if (details.classList.contains('expanded')) {
         details.classList.remove('expanded');
-        button.textContent = "Extend"; // Change button text
+        button.textContent = "More"; // Change button text
     } else {
         details.classList.add('expanded');
         button.textContent = "Minimize"; // Change button text
