@@ -4,10 +4,10 @@
 }
 
 :root {
-    --primary-color: #2A9D8F;
+    --primary-color: #1D3557;
     --secondary-color: #E9C46A;
     --accent-color: #E76F51;
-    --background-color: #050e11;
+    --background-color: #040410;
     --text-color: #ffffff;
 }
 
@@ -38,7 +38,7 @@ header nav {
 }
 
 header .logo {
-    color: var(--background-color);
+    color: var(--text-color);
     font-size: 24px;
     font-weight: bold;
 }
