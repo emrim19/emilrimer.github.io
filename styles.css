@@ -171,6 +171,7 @@ footer {
     max-height: 400px; /* Adjust this value as needed */
     overflow-y: auto;
     padding-right: 10px; /* Optional: Add some padding to avoid content touching the scrollbar */
+    margin-bottom: 10px;
 }
 
 /* Optional: Style the scrollbar (for WebKit browsers like Chrome and Safari) */
@@ -266,5 +267,17 @@ footer {
 
     .project-abstract {
         max-height: 350px; /* Adjust for tablet screens */
+    }
+}
+
+/* For narrow screens (up to 768px), stack image above text */
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .project-image {
+        margin-right: 0;  /* Remove the right margin */
+        margin-bottom: 15px; /* Add margin below the image */
     }
 }
